@@ -1,0 +1,279 @@
+/* Profiles.css */
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.column-profile {
+  display: flex;
+}
+
+.column-container {
+  display: flex;
+}
+
+.column-left {
+  flex: 1;
+  padding: 20px;
+}
+
+.column-right {
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatarr-container{
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+
+.avatarr {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.info-label {
+  margin: 10px 0;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+/*.settings-panel {*/
+/*  width: 20%;*/
+/*  padding: 20px;*/
+/*  background: linear-gradient(45deg, #007bff, #038109);*/
+/*  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*/
+/*  border-radius: 20px;*/
+/*  margin: 20px;*/
+/*}*/
+
+.settings-panel {
+  width: 20%;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin: 20px;
+
+  color: #fff;
+  background: linear-gradient(135deg, #2d4dff, #00ccff, #0c0c0c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite alternate,
+             gradientMovement 20s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradientMovement {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.settings-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  border-radius: 10px;
+}
+
+.settings-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #0056b3, #003a8d);
+}
+
+.profile-info {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #ffffff, rgb(255, 255, 255));
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.editt-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.editt-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Stiluri pentru modal */
+.modall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(0, 0, 0, 0.7);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-contentt {
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  width: 40%;
+  max-width: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+
+/* Stiluri pentru formularul de editare */
+.form-label {
+  margin-top: 10px;
+  display: block;
+}
+
+.form-input {
+  width: 80%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.form-select {
+  width: 82%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.avatar-upload-container {
+  text-align: center;
+  border: 2px dashed #ccc;
+  margin-top: 25px;
+  cursor: pointer;
+  margin-right: 50px;
+  border-radius: 20px;
+}
+
+.avatar-upload-text {
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.update-button-profile {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 110px;
+}
+
+.update-button-profile:hover {
+  background-color: #0056b3;
+}
+
+.close-button-profile {
+  background-color: #ccc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.close-button-profile:hover {
+  background-color: #999;
+}
+
+/* Design responsiv pentru ecrane mai mici */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .settings-panel {
+    width: 80%;
+  }
+
+  .profile-info {
+    margin: 10px 0;
+  }
+
+  .avatar-upload-container {
+    margin-right: 0;
+  }
+
+  .update-button-profile,
+  .close-button-profile {
+    margin-left: 0;
+  }
+
+}

@@ -1,0 +1,88 @@
+/* Stilizare pentru containerul principal */
+.Address-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+}
+
+/* Stilizare pentru formular */
+.Address-info {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.sub-titt {
+  font-size: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ef0404;
+}
+
+.create-profile {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Stilizare pentru input-uri */
+.input-country,
+.input-city,
+.input-street,
+.input-house-number,
+.input-apartment {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+/* Stilizare pentru butonul de creare a adresei */
+.create-button-address {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 96%;
+}
+
+.create-button-address:hover {
+  background-color: #0056b3;
+}
+
+.create-button-address:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Design responsiv pentru ecrane mai mici */
+@media (max-width: 368px) {
+  .Address-container {
+    height: auto;
+  }
+
+  .Address-info {
+    max-width: 100%;
+    margin: 20px 10px;
+  }
+
+  .input-country,
+  .input-city,
+  .input-street,
+  .input-house-number,
+  .input-apartment {
+    width: 100%;
+  }
+
+  .create-button-address {
+    width: 100%;
+  }
+}

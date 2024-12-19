@@ -1,0 +1,107 @@
+/* ServiciiManager.css */
+
+.service-containerr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 70px;
+}
+
+.add-service-formm {
+  margin-bottom: 20px;
+}
+
+.add-service-formm input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-service-formm button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-service-formm button:hover {
+  background-color: #0056b3;
+}
+
+.service-listt {
+  width: 100%;
+  max-width: 600px;
+}
+
+.service-titlee {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-itemm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.service-itemm p {
+  margin: 0;
+}
+
+.service-itemm textarea[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.service-itemm button {
+  padding: 6px 12px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.service-itemm button:hover {
+  opacity: 0.8;
+}
+
+/* Stiluri pentru input-ul de actualizare */
+.Create--service {
+  border: 2px solid rgba(105, 99, 99, 0.87);
+  border-radius: 8px;
+  width: 90%;
+  padding: 15px;
+  margin: 10px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Create--service textarea[type="text"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Create--service button {
+  padding: 6px 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Create--service button:last-child {
+  margin-right: 0;
+}

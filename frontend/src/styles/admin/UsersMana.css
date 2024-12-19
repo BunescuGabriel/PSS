@@ -1,0 +1,101 @@
+/* Stil pentru containerul principal */
+.users-manager-container {
+  width: 96%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+/* Stil pentru titlul listei de utilizatori */
+.users-manager-title {
+  font-size: 24px;
+  margin-bottom: 20px; /* Măriți spațiul dintre titlu și listă */
+}
+
+/* Stil pentru lista de utilizatori */
+.users-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Stil pentru fiecare element din lista de utilizatori */
+.user-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 20px; /* Măriți spațiul intern */
+  display: flex;
+  justify-content: space-between; /* Așezați elementele în interiorul fiecărui element din listă */
+  align-items: center; /* Așezați elementele pe verticală în centru */
+}
+
+.user-username {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.user-name {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.avatara {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Stil pentru butonul de activare/dezactivare Superuser */
+.user-superuser-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* Stil pentru iconul de ștergere */
+.deleta-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: red;
+  margin-left: 10px;
+}
+
+.user-superuser {
+  background-color: #28a745; /* Verde pentru Superuser */
+  color: #fff;
+}
+
+.user-not-superuser {
+  background-color: #dc3545; /* Roșu pentru non-Superuser */
+  color: #fff;
+}
+
+/*@media only screen and (max-width: 600px) {*/
+/*  .users-manager-container {*/
+/*    margin: 0 10px;*/
+/*  }*/
+/*  .user-item {*/
+/*    flex-direction: column;*/
+/*    align-items: flex-start;*/
+/*  }*/
+/*  .user-username {*/
+/*    font-size: 18px;*/
+/*  }*/
+/*}*/

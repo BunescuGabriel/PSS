@@ -1,0 +1,93 @@
+/* CarManager.css */
+
+/* Stilurile pentru containerul principal product-list-add */
+.product-list-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+
+/* Stilurile pentru cardurile produselor din product-list-add */
+.product-card-add {
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card-add:hover {
+  transform: scale(1.05);
+}
+
+/* Stilurile pentru imaginea produsului */
+.product-card-image--add {
+  height: 70%;
+  position: relative;
+}
+
+.product-card-image--add img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card-image--add:hover img {
+  transform: scale(1.1);
+}
+
+/* Stilurile pentru numele produsului */
+.product-name--add {
+  padding: 5px;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Stilurile pentru iconița de ștergere a produsului (doar pentru utilizatorii super) */
+.delete-icon-car--add {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: red;
+}
+
+/* Stilurile pentru banner-ul de adăugare a unui nou produs */
+.banner-conta--add {
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner-conta--add:hover {
+  transform: scale(1.05);
+}
+
+.banner-imagee--add {
+  color: #ccc;
+}
+
+.banner-inf--add {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+

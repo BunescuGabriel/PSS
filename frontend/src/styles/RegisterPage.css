@@ -1,0 +1,49 @@
+/* Stilurile pentru bara de progres */
+.progress-bar {
+  width: 90%; /* Lățimea totală a barei de progres */
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+  margin: 20px 0;
+    margin-left: 60px;
+
+}
+
+/* Stilurile pentru segmentele de progres */
+.step1 {
+  width: 50%; /* Lățimea fiecărui segment (1/3 din lățimea totală) */
+  height: 20px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  border: 1px solid #ddd; /* Adăugare de margini între segmente */
+  box-sizing: border-box; /* Asigurați-vă că marginile sunt incluse în lățimea segmentului */
+  border-radius: 8px 0 0 8px;
+}
+
+/* Stilurile pentru segmentele active de progres */
+.step1.active {
+  background-color: rgba(0, 255, 0, 0.55); /* Culoarea pentru segmentele active */
+  color: #0a0a0a; /* Culoarea textului pentru segmentele active */
+
+}
+
+.step2 {
+  width: 50%; /* Lățimea fiecărui segment (1/3 din lățimea totală) */
+  height: 20px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  border: 1px solid #ddd; /* Adăugare de margini între segmente */
+  box-sizing: border-box; /* Asigurați-vă că marginile sunt incluse în lățimea segmentului */
+  border-radius: 0 8px 8px 0;
+}
+
+/* Stilurile pentru segmentele active de progres */
+.step2.active {
+  background-color: rgba(0, 255, 0, 0.55); /* Culoarea pentru segmentele active */
+  color: #0a0a0a; /* Culoarea textului pentru segmentele active */
+  border-radius: 0 8px 8px 0;
+}

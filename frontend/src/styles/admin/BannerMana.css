@@ -1,0 +1,127 @@
+.banner-containe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 10px; /* Am folosit 10px pentru coerență cu alte stiluri */
+  background-color: rgba(255, 255, 255, 0.74);
+  width: 300px; /* Specificăm lățimea maximă */
+  height: 300px; /* Specificăm înălțimea maximă */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.banner-conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 10px; /* Am folosit 10px pentru coerență cu alte stiluri */
+  background-color: rgba(255, 255, 255, 0.74);
+  max-width: 300px; /* Specificăm lățimea maximă */
+  max-height: 300px; /* Specificăm înălțimea maximă */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+
+}
+
+.banner-imagee img {
+  width: 100%;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.banner-inf {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.delete-icon {
+  color: #ff0000;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.delete-icon:hover {
+  color: #d40000;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-contentt {
+  background-color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-contentt h2 {
+  margin-bottom: 20px;
+}
+
+.modal-contentt input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-contentt button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-contentt button:hover {
+  background-color: #0056b3;
+}
+
+.name-banner {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* You can choose your desired color */
+}
+
+/* Styles for the file upload button */
+.file-upload-container {
+  position: relative;
+}
+
+.file-upload-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Hide the default file input */
+input[type="file"] {
+  display: none;
+}

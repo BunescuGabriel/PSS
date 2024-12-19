@@ -1,0 +1,61 @@
+# Ignoră baza de date SQLite
+db.sqlite3
+db.sqlite4
+
+# Ignoră directorul media/avatar
+Backend/media/avatar
+Backend/media/banner
+Backend/media/car
+Backend/media/servicii
+Backend/static
+
+# Ignoră directorul .idea
+.idea
+./Backend/venv
+# Fișiere Python compilate
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fișiere de configurare și baze de date locale
+*.sqlite3
+*.db
+
+# Setări locale
+local_settings.py
+
+# Secrete sau chei
+.env
+*.env
+
+# Migrations generate automat
+*/migrations/*
+
+# Node modules (dacă folosești JavaScript/React/alte tehnologii front-end)
+node_modules/
+
+# Fișierele create de editori/IDE-uri
+.vscode/
+.idea/
+*.iml
+
+# Fișiere generate de sistemul de operare
+.DS_Store
+Thumbs.db
+
+# Fișiere de log
+*.log
+
+# Dependențe Python instalate în virtual environment
+venv/
+.env/
+.env.bak/
+*.egg-info/
+dist/
+build/
+
+# Fișiere pentru testare
+.coverage
+.tox/
+nosetests.xml
+pytest_cache/

@@ -1,0 +1,133 @@
+/* ConditiiComponent.css */
+
+.conditii-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  /*margin-left: 30px;*/
+}
+
+.conditii-heading {
+  font-size: 34px;
+  color: #0a0a0a;
+  margin: 0;
+}
+
+.condition-item {
+  margin:0;
+  counter-increment: my-counter;
+  position: relative;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.condition-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.condition-title {
+  font-size: 26px;
+  color: #0a0a0a;
+  font-weight: bold;
+}
+
+.condition-text {
+  font-size: 16px;
+  color: #0a0a0a;
+  margin-left: 10px;
+}
+
+/* ConditiiComponent.css */
+
+/* ... (other styles remain the same) */
+
+.description-list {
+  counter-reset: my-counter;
+  margin-left: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.custom-counter {
+  position: absolute;
+  left: -20px;
+}
+
+.description-item {
+  font-size: 14px;
+  color: #111111;
+  counter-increment: my-counter;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+
+.loading-description {
+  font-style: italic;
+  color: #aaa;
+}
+
+/* ConditiiComponent.css */
+
+/* ... (other styles remain the same) */
+
+/* Stiluri pentru butoanele din lista de condiții */
+.condition-item button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Stiluri pentru butoanele de ștergere și actualizare din descriere */
+.description-item button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Stiluri pentru butoanele de adăugare condiție și descriere */
+.add-condition-form button,
+.add-description-form button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Stil pentru butonul de închidere */
+.add-condition-form button:last-child,
+.add-description-form button:last-child {
+  margin-left: 10px;
+  background-color: #565151;
+  color: #fff;
+}
+
+/* Stil pentru butonul de adăugare condiție nouă */
+.add-condition-form button {
+  background-color: #17981e;
+  color: #fff;
+}
+
+/* Stil pentru butonul de adăugare descriere nouă */
+.add-description-form button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Stiluri pentru hover */
+.condition-item button:hover,
+.description-item button:hover,
+.add-condition-form button:hover,
+.add-description-form button:hover {
+  opacity: 0.8;
+}
+
+/* ... (other styles remain the same) */
+.edit-buttonn{
+  background-color: #9698a1;
+}

@@ -1,0 +1,74 @@
+/*!* ConditiiComponent.css *!*/
+
+.conditii-containerr {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  /*margin-left: 30px;*/
+}
+
+.conditii-headingg {
+  font-size: 34px;
+  color: #0a0a0a;
+  margin: 0;
+}
+
+.conditii-sub {
+  font-size: 16px;
+  color: #0a0a0a;
+  margin-left: 15px;
+  font-weight: normal;
+}
+
+.condition-itemm {
+  margin-left: 10px;
+  counter-increment: my-counter;
+  position: relative;
+  border-radius: 5px;
+}
+
+/*.condition-itemm:hover {*/
+/*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+.condition-titlee {
+  font-size: 26px;
+  color: #0a0a0a;
+  font-weight: bold;
+}
+
+.condition-textt {
+  font-size: 16px;
+  color: #0a0a0a;
+  margin-left: 10px;
+}
+
+/* ConditiiComponent.css */
+
+/* ... (other styles remain the same) */
+
+.description-listt {
+  counter-reset: my-counter;
+  margin-left: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.custom-counterr {
+  position: absolute;
+  left: -20px;
+}
+
+.description-itemm {
+  font-size: 14px;
+  color: #111111;
+  counter-increment: my-counter;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+
+.loading-descriptionn {
+  font-style: italic;
+  color: #aaa;
+}

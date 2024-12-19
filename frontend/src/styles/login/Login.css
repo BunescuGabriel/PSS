@@ -1,0 +1,153 @@
+/* Login.css */
+
+.login {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(1, 2, 5, 0.1);
+  border-radius: 20px;
+}
+
+.login-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  margin-right: 22px;
+}
+
+.input-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #007bff; /* Culoarea inițială */
+  transition: color 0.3s ease-in-out; /* Adaugă o tranziție pentru schimbarea culorii */
+}
+
+.password-toggle.active {
+  color: #ce0d0d; /* Culoarea când este apăsat */
+}
+
+.login-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.forgot-password-link {
+  font-size: 14px;
+  margin-left: 200px;
+  color: #007bff;
+  text-decoration: none;
+
+
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-link a {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.register-link h3 {
+  font-weight: normal; /* Face ca textul din h3 să nu fie îngroșat */
+}
+
+/* Design responsiv pentru ecrane mai mici */
+@media (max-width: 268px) {
+  .login {
+    max-width: 100%;
+    margin: 20px 10px;
+  }
+
+  .input-group {
+    margin-right: 0;
+  }
+
+  .forgot-password-link {
+    margin-left: 0;
+  }
+
+  .alert-error {
+    top: 5%;
+    max-width: 95%; /* Adjust the max-width for smaller screens */
+    width: 95%; /* Adjust the width for smaller screens */
+    /*margin-right: 100px;*/
+  }
+}
+
+
+
+.alert-error {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff3333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+
+
+

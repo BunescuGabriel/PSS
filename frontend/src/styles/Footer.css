@@ -1,0 +1,120 @@
+/* Footer.css */
+
+.footer {
+  color: #fff;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #2d4dff, #00ccff, #0c0c0c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite alternate,
+             gradientMovement 20s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradientMovement {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+  max-width: 300px;
+}
+
+.footer-right {
+  flex: 1;
+  max-width: 300px;
+}
+
+/* Stilizare pentru titlurile din footer */
+h3, h4 {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Stilizare pentru textul din footer */
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Stilizare pentru lista din footer */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Stilizare pentru link-urile din footer */
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #aaa; /* Culoare pentru hover peste link */
+}
+
+/* Stilizare pentru informațiile de contact */
+.contact-info {
+  margin-bottom: 5px;
+}
+
+.contact-info svg {
+  margin-right: 5px;
+}
+
+.contact-linkk {
+  color: #fff;
+}
+
+.contact-linkk:hover {
+  color: #aaa;
+}
+
+/* Stilizare pentru partea de jos a footer-ului */
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+}
+
+.logo-img-footer {
+  width: 150px; /* Ajustează dimensiunea imaginii conform preferințelor tale */
+  height: auto; /* Permite imaginii să-și păstreze proporțiile */
+  display: block; /* Elimină spațiile goale din jurul imaginii */
+  margin-bottom: 20px; /* Spațiul între imagine și text */
+  border-radius: 10px;
+}

@@ -1,0 +1,90 @@
+/* Stilurile pentru containerul banner-slider */
+.banner-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 500px;
+  border-radius: 5px;
+  width: 100%;
+
+  /*background-color: #e50707;*/
+  /*margin: 10px;*/
+
+}
+
+.banner-container {
+  flex: 0 0 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/* Stiluri pentru fiecare element de imagine din carusel */
+.banner-slide {
+  transition: transform 0.5s ease-in-out;
+}
+
+.banner-slide img {
+  width: 100%;
+height: 500px;
+  object-fit: cover;
+
+}
+
+/* Efect de tranziție pentru imaginea curentă */
+.banner-slide.current {
+  transform: translateX(0%);
+}
+
+/* Efect de tranziție pentru imaginea următoare */
+.banner-slide.next {
+  transform: translateX(-100%);
+}
+
+/* Efect de tranziție pentru imaginea anterioară */
+.banner-slide.prev {
+  transform: translateX(100%);
+}
+
+.arrow:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  /*background-color: #ffffff;*/
+  transform: rotate(45deg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Stilurile pentru săgeți */
+.arrow {
+  position: absolute;
+  top: 46%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.arrow.left {
+  left: 5px;
+  border-right: 15px solid transparent; /* Adăugați border-right pentru săgeată la stânga */
+  border-left: 20px solid #e50707; /* Adăugați border-left pentru săgeată la stânga */
+}
+
+.arrow.right {
+  right: 10px;
+  border-left: 15px solid transparent; /* Adăugați border-left pentru săgeată la dreapta */
+  border-right: 20px solid #e50707; /* Adăugați border-right pentru săgeată la dreapta */
+}
+
+.icon-color {
+  color: #ffffff;
+}
+
+
+

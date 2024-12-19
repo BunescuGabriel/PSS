@@ -1,0 +1,66 @@
+/* ListRating.css */
+
+.list-rating-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.list-rating-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.list-rating-list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-rating-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.list-rating-bar {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.list-rating-value {
+  background-color: #4caf50; /* Culoare pentru bara de rating completă */
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  width: 0; /* Lungimea inițială a barei este 0 */
+  transition: width 0.3s; /* Animare pentru extinderea barei */
+}
+
+/* Stilurile pentru fiecare rating specific */
+.list-rating-item:nth-child(1) .list-rating-bar .list-rating-value {
+  background-color: #67d54c; /* Culoare pentru rating 5 */
+}
+
+.list-rating-item:nth-child(2) .list-rating-bar .list-rating-value {
+  background-color: #86e170; /* Culoare pentru rating 4 */
+}
+
+.list-rating-item:nth-child(3) .list-rating-bar .list-rating-value {
+  background-color: #ffc107; /* Culoare pentru rating 3 */
+}
+
+.list-rating-item:nth-child(4) .list-rating-bar .list-rating-value {
+  background-color: #f83104; /* Culoare pentru rating 2 */
+}
+
+.list-rating-item:nth-child(5) .list-rating-bar .list-rating-value {
+  background-color: #fa0000; /* Culoare pentru rating 1 */
+}

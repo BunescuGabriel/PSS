@@ -1,0 +1,34 @@
+/* TermeniComponent.css */
+
+.termeni-container {
+  margin: 0 auto;
+  padding: 20px;
+  /*border: 1px solid #ccc;*/
+  border-radius: 8px;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.termeni-section {
+  margin-top: 20px;
+}
+
+.TermeniCondiții {
+  color: #333;
+}
+
+.Term {
+  color: #555;
+  margin-left: 20px;
+}
+
+.locatar{
+  list-style-type: none;
+  padding: 0;
+  margin-left: 40px;
+  margin: 0;
+}
+
+.locatart {
+  margin-bottom: 8px;
+}
+

@@ -1,0 +1,269 @@
+/* CarDetail.css */
+
+/* Container for the two columns */
+.car-detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+
+/* Individual columns */
+.column1 {
+  width: 48%; /* Adjust the width as needed */
+  padding: 10px;
+  background-color: rgba(240, 240, 240, 0.4);
+  /*border: 1px solid #ccc;*/
+  border-radius: 5px;
+}
+
+.additional-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.thumbnail-image {
+  max-width: 100px; /* Adjust the maximum width as needed */
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.column2 {
+  width: 48%; /* Adjust the width as needed */
+  /*padding: 10px;*/
+  /*background-color: #f0f0f0;*/
+  border-radius: 5px;
+}
+
+.column-atribute {
+  width: 48%; /* Adjust the width as needed */
+  padding: 5px;
+  /*background-color: #f0f0f0;*/
+  /*border: 1px solid #ccc;*/
+  border-radius: 5px;
+
+}
+
+/* Image gallery styles */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+}
+
+/* Text styles */
+.car-info {
+  font-size: 16px;
+  color: #4b4848;
+}
+.car-infoo {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.car-info p {
+  margin: 8px 0;
+}
+
+/* FontAwesome icons */
+.car-info .fa-icon {
+  margin-right: 5px;
+}
+
+/* Description paragraph */
+.car-description {
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+
+.car-Preturi{
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+  border-radius: 5px;
+}
+
+.car-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #cbc7c7;
+}
+
+.car-table th {
+  /*background-color: #f2f2f2;*/
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #cbc7c7;
+  height: 36px;
+  width: 36px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Efect de ridicare */
+  /*transition: transform 0.3s ease-in-out; !* Tranzitie pentru transform *!*/
+}
+
+/*.car-table th:hover {*/
+/*  transform: scale(1.1); !* Mărește dimensiunea la evidențiere *!*/
+/*}*/
+
+.car-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #cbc7c7;
+  height: 36px;
+  width: 36px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Efect de ridicare */
+  /*transition: transform 0.3s ease-in-out; !* Tranzitie pentru transform *!*/
+}
+
+
+.container-rating-coment {
+  display: flex;
+}
+
+.column-totalR {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Aliniază conținutul pe mijloc pe axa orizontală */
+  align-items: center;
+}
+
+.column-Rating {
+  flex: 5;
+}
+
+.car-totalRating{
+  font-size: 50px;
+  color: #33cc33;
+  margin-bottom: 0;
+}
+
+.column-totalRating{
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Alinierea elementelor într-o coloană */
+  align-items: center;
+}
+
+.star-icons {
+  display: flex;
+  flex-direction: column; /* Alinierea elementelor într-o coloană */
+  align-items: center; /* Alinierea pe axa orizontală */
+}
+
+.star-icons .renderStars, .Votes {
+  margin: 5px 0; /* Spațiere între elementele din coloană */
+}
+
+.vot {
+  margin: 0;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-caruseli-image {
+  background: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 100%;
+  overflow-y: auto; /* Add vertical scrolling if content is too long */
+  position: relative;
+}
+
+/* Close button */
+.close-modal-caruseli-image {
+  position: absolute;
+  top: 0; /* Adjusted for better positioning */
+  right: 0; /* Adjusted for better positioning */
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 5px 10px; /* Adjusted for better responsiveness */
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.close-modal-caruseli-image:hover {
+  background: #ff1a1a;
+}
+
+/* Carousel inside modal */
+.modal-caruseli-image .carousel .slide {
+  background: none;
+}
+
+.modal-caruseli-image .carousel img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .modal-caruseli-image {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .close-modal-caruseli-image {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-caruseli-image {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .close-modal-caruseli-image {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+/* Stiluri pentru ContactComponent */
+.contact-container-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+.contact-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  /* Stiluri pentru titlul 'Contacte' */
+}
+
+.column-cont1 {
+  flex: 2;
+  padding: 20px;
+  margin-right: 350px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+  transition: all 0.3s ease; /* Efect de tranziție pentru orice schimbare */
+}
+
+.column-cont1:hover {
+  transform: translateY(-5px); /* Ridicăm ușor coloana la hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.column-cont2 {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Stiluri pentru input-uri și textarea */
+.contact-input,
+.contact-textarea {
+  display: block;
+  width: 98%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+/* Stiluri pentru buton */
+/* Adaugare efect de animatie la hover pentru buton */
+.btn-send {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efect de tranziție pentru schimbarea culorii de fundal */
+}
+
+.btn-send:hover {
+  background-color: #0056b3;
+}
+
+/* Adaugare efect de animatie la apasarea butonului */
+.btn-send:active {
+  transform: translateY(1px); /* Mică deplasare în jos pentru simula apăsarea butonului */
+}
+
+
+/* Stiluri pentru informațiile de contact */
+.contact-info {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-titlee {
+  font-size: 20px;
+  margin-bottom: 20px;
+  /* Stiluri pentru titlul 'Contacte' */
+}
+
+.contact-link {
+  text-decoration: none; /* Eliminăm sublinierea implicită a link-urilor */
+  color: #0c0c0c; /* Schimbăm culoarea link-urilor */
+  transition: color 0.3s ease; /* Efect de tranziție pentru schimbarea culorii la hover */
+}
+
+.contact-link:hover {
+  color: #0c0c0c; /* Schimbăm culoarea la hover */
+}

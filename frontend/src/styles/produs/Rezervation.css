@@ -1,0 +1,127 @@
+/* Existing General styles */
+.Rezervation {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+}
+
+.rezervation-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rezervation-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.rezervation-input{
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.name-input-rezervation,
+.email-input-rezervation{
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.phone-input-rezervation {
+  width: 84%; /* Ajustați lățimea conform preferințelor */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+
+/* Stilizare pentru erorile asociate cu PhoneInput */
+.phone-input-rezervation.error {
+  border-color: red;
+}
+
+/* Stilizare pentru a afișa un mesaj de eroare sub componenta PhoneInput */
+.phone-input-rezervation ~ .error-message-rezervation {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.error-message-rezervation {
+  color: red;
+  margin-top: 5px;
+}
+
+.success-message-rezervation {
+  color: green;
+  margin-top: 5px;
+}
+
+
+
+.btn-send-rezervation {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  grid-column: span 2;
+}
+
+.btn-send-rezervation:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles for icons */
+.icon-rezervation {
+  display: flex;
+  align-items: center;
+}
+
+.iconnn {
+  margin-right: 5px;
+  color: rgba(94, 91, 91, 0.74);
+}
+
+/* Stilizare pentru containerul principial al informațiilor de preț */
+.pret-zile-rezervare {
+  grid-column: span 2;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Stilizare pentru paragrafele cu informații despre preț */
+.pret-zile-rezervare p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+
+/* Aliniere la dreapta pentru valori */
+.align-right {
+  float: right;
+  font-weight: bold;
+}
+
+/* Stilizare pentru textul roșu */
+.red-text {
+  color: #e51837;
+  font-size: 20px;
+}

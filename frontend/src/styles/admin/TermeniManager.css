@@ -1,0 +1,64 @@
+/* TermeniComponent.css */
+
+.termeni-container {
+  font-family: 'Roboto', sans-serif;
+  /*margin: 20px;*/
+  /*margin-left: 40px;*/
+  margin: 0;
+}
+
+.termeni-list {
+  padding: 0;
+  margin: 0;
+}
+
+.termen-item {
+  /*border: 1px solid #e1e1e1;*/
+  border-radius: 5px;
+  /*margin-bottom: 15px;*/
+  padding: 15px;
+  margin: 0;
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+  /*transition: box-shadow 0.3s ease;*/
+}
+
+.termen-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Titluu{
+  font-size: 40px;
+  color: #0a0a0a;
+}
+.Title {
+  font-size: 1.7em;
+  color: #333;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(10, 10, 10, 0.85);
+  font-weight: normal;
+}
+
+.text2 {
+  line-height: 1.5;
+  color: #0a0a0a;
+  font-weight: bold;
+}
+
+.text3{
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(10, 10, 10, 0.85);
+  font-weight: normal;
+}
+.text3 strong {
+  font-weight: bold;
+  font-size: 22px;
+  color: #0a0a0a;
+}
+

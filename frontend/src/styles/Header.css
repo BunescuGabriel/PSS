@@ -1,0 +1,280 @@
+/* Import fontul și definirea fontului de bază */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,700;1,500&display=swap');
+
+/* Stil de bază pentru corpul paginii */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/* Header Container */
+
+.header {
+  color: #fff;
+  padding:  15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+transition: top 0.3s ease-in-out, background 0.3s ease-in-out;
+  background: linear-gradient(135deg, #2d4dff, #00ccff, #0c0c0c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite alternate,
+             gradientMovement 20s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradientMovement {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.header.scrolled {
+  position: fixed;
+  z-index: 1000;
+  width: 97%;
+  left: 0;
+  top: 0;
+  transition: top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  /*margin: 12px;*/
+}
+
+.navigation-bar {
+  /*margin-left: 10px; !* Ajustați spațiul între antet și meniu *!*/
+}
+
+nav ul li {
+  display: inline;
+  align-content: center;
+  margin-right: 20px; /* Reducerea spațiului între elementele de meniu */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px; /* Reducerea dimensiunii fontului pentru ecrane mai mici */
+}
+
+/* User Menu */
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-circle {
+  position: relative;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.avatar {
+  width: 40px; /* Reducerea dimensiunii avatarului pentru ecrane mai mici */
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icon {
+  font-size: 20px; /* Reducerea dimensiunii iconului pentru ecrane mai mici */
+}
+
+.menu li {
+  font-size: 14px; /* Reducerea dimensiunii fontului pentru ecrane mai mici */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px; /* Reducerea spațiului între elementele de meniu */
+}
+
+/* Stil pentru al doilea <li> cu clasă "user-name" */
+.menu.user-name {
+  font-size: 16px; /* Reducerea dimensiunii fontului pentru ecrane mai mici */
+  font-weight: normal;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.menu {
+  position: absolute;
+  list-style-type: none;
+  margin: 5px 0;
+  border: 1px solid grey;
+  width: 120px; /* Reducerea lățimii meniului pentru ecrane mai mici */
+  box-shadow: 0px 4px 6px rgba(1, 1, 5, 6);
+  padding: 10px; /* Reducerea padding-ului pentru a se potrivi pe ecrane mai mici */
+  text-align: left;
+  right: -10px;
+  border-radius: 8px;
+  z-index: 10;
+
+  color: #fff;
+  background: linear-gradient(135deg, #2d4dff, #00ccff, #0c0c0c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite alternate,
+             gradientMovement 20s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradientMovement {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/*.menu li:hover {*/
+/*  color: #007bff;*/
+/*  !*background-color: #e0e0e0;*!*/
+/*}*/
+
+/* Stil pentru numele utilizatorului */
+.menu li:first-child {
+  font-weight: bold;
+}
+
+
+
+/* Stil pentru meniul de navigare pe ecrane mici */
+@media (max-width: 300px) {
+  .header {
+    flex-direction: column; /* Afișați elementele de antet vertical pe ecrane mici */
+    align-items: flex-start; /* Afișați elementele de antet la începutul containerului pe ecrane mici */
+  }
+
+  .navigation-bar {
+    margin-top: 10px; /* Ajustați spațiul dintre meniu și antet pentru ecrane mici */
+    margin-left: 0; /* Eliminați margin-left pentru meniu pe ecrane mici */
+    width: 100%;
+  }
+
+  nav ul li {
+    display: block; /* Afișați elementele de meniu vertical pe ecrane mici */
+    margin-right: 0; /* Eliminați margin-right pentru elementele de meniu pe ecrane mici */
+  }
+
+  nav ul li a {
+    font-size: 16px; /* Restabiliți dimensiunea fontului pentru ecrane mici */
+    margin-bottom: 10px; /* Ajustați spațiul dintre elementele de meniu pe ecrane mici */
+  }
+}
+.icon-globe{
+  font-size: 40px;
+  /*margin-left: 50px;*/
+}
+.icon-globee{
+  font-size: 36px;
+  /*margin-left: 50px;*/
+  margin-top: 10px;
+}
+
+.LOCAL-TIMING{
+  margin-right: 104px;
+}
+
+
+.horizontal-list {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.horizontal-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-list ul li {
+  margin-top: 10px;
+}
+
+.abcc{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.abc{
+  font-size: 14px;
+}
+
+.logo-img {
+  width: 70px;
+  height: auto;
+  align-content: center;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.button-hed {
+  display: inline-block;
+  width: 100%;
+  max-width: 70px; /* Setează o lățime maximă pentru buton */
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 14px; /* Rotunjirea colțurilor butonului */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Centrează textul în buton */
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px; /* Spatiu între butoane */
+}
+
+.button-hed:hover {
+  background-color: #0056b3;
+}
+
+
+

@@ -1,0 +1,56 @@
+.Service-container {
+  position: relative;
+  width: 100%;
+}
+
+.text-overlay {
+  position: relative;
+  padding: 20px;
+}
+
+.title-service {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.servicii-caruseli {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slide-container {
+  max-width: 80%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  border: 2px solid;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+
+.slide-container:hover {
+  transform: scale(1.05);
+}
+
+.slide-container p {
+  max-width: 90%;
+  margin: 30px auto;
+  color: #0c0c0c;
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 30;
+  -webkit-box-orient: vertical;
+}
+
+

@@ -1,0 +1,27 @@
+/* You can add this CSS to your existing styles or create a new CSS file for Rating component */
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  font-size: 34px; /* Adjust the size as needed */
+  color: #ccc; /* Default star color */
+  cursor: pointer;
+  margin-right: 5px; /* Adjust the spacing between stars */
+}
+
+.star-icon.selected {
+  color: #fadb14; /* Color for selected stars */
+}
+
+button {
+  /* Add styles for the "Evaluare" button */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add more styles as needed for your specific design requirements */
